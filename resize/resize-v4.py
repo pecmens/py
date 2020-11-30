@@ -58,7 +58,7 @@ def main():
 
     for root, dirs, files in path:
         for f in files:
-            if f.endswith(".jpg"):
+            if f.endswith(".png"):
                 shutil.move(os.path.join(root, f), os.path.join("./prepare", f))
 
     # Traversal the image to be added. 
